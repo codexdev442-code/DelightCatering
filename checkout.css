@@ -1,0 +1,165 @@
+:root {
+  --text-hero: clamp(2.6rem, 6vw, 4rem);
+  --text-h1: clamp(2.8rem, 4vw, 4rem);
+  --text-h2: clamp(1.8rem, 3vw, 2.4rem);
+  --text-h3-sh: clamp(1.4rem, 3.3vw, 2.3rem);
+  --text-body: 1.15rem;
+  --text-small: 1rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --btn-sm: 0em 0.35em;
+  --btn-md: 0.75em 1.5em;
+  --btn-lg: 1em 2em;
+  --green_clr: #25D366;
+  --clr-brown: #6E3C19;
+  --brw-clr: #A7795E;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+ul.links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  background: #C98F62;
+}
+ul.links li{
+  list-style: none;
+}
+ul.links li a{
+  text-decoration: none;
+  font-size: var(--text-body);
+}
+.product_info{
+  display: flex;
+  gap: var(--space-md);
+  width: 100vw;
+  max-width: 550px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: var(--space-sm);
+  margin: 0 auto;
+}
+.product_info img{
+  width: 40%;
+  height: auto;
+}
+.product_info div{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding-left: var(--space-xs);
+}
+.product_info h2{
+  font-size: var(--text-h3-sh);
+}
+.product_info p{
+  font-size: var(--text-small);
+}
+
+/* SECTION CONTAINER */
+#info {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* HEADINGS */
+#info h3 {
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* INPUTS & SELECT */
+#info input,
+#info select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+#info input:focus,
+#info select:focus {
+  outline: none;
+  border-color: #d32f2f;
+}
+
+/* SIZE & QUANTITY ROW */
+.size_quantity {
+  display: flex;
+  gap: 10px;
+}
+
+.size_quantity input {
+  flex: 1;
+}
+
+/* LABELS */
+#info label {
+  font-size: 0.85rem;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+}
+
+/* RADIO BUTTONS */
+#info input[type="radio"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+#info div > label {
+  display: inline;
+  font-weight: normal;
+}
+
+/* PICKUP ADDRESS TEXT */
+.pickup_asddress {
+  font-size: 0.9rem;
+  background: #f8f8f8;
+  padding: 10px;
+  border-left: 4px solid #d32f2f;
+  margin: 10px 0;
+}
+
+/* BUTTON */
+#info button {
+  width: 100%;
+  padding: 14px;
+  background: #d32f2f;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#info button:hover {
+  background: #b71c1c;
+}
+#delivery-fields {
+  display: none;
+}
+/* MOBILE FRIENDLY */
+@media (max-width: 480px) {
+  .size_quantity {
+    flex-direction: column;
+  }
+}

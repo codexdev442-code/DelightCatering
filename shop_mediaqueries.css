@@ -1,0 +1,11 @@
+@media(min-width: 650px){
+  .shop_cart_cont{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1124px) {
+  .shop_cart_cont  div button{
+    top: 75%;
+  }
+}

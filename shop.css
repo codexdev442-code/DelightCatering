@@ -1,0 +1,81 @@
+:root {
+  --text-hero: clamp(2.6rem, 6vw, 4rem);
+  --text-h1: clamp(2.8rem, 4vw, 4rem);
+  --text-h2: clamp(1.8rem, 3vw, 2.4rem);
+  --text-h3-sh: clamp(1.6rem, 3.5vw, 2.5rem);
+  --text-body: 1.15rem;
+  --text-small: 1.1rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --btn-sm: 0em 0.35em;
+  --btn-md: 0.75em 1.5em;
+  --btn-lg: 1em 2em;
+  --green_clr: #25D366;
+  --clr-brown: #6E3C19;
+  --brw-clr: #A7795E;
+}
+ul.links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  background: #C98F62;
+}
+ul.links li{
+  list-style: none;
+}
+ul.links li a{
+  text-decoration: none;
+  font-size: var(--text-body);
+}
+
+.shop_categories{
+  padding: var(--space-md) 0;
+  display: grid;
+  grid-row-gap: var(--space-md);
+  padding-top: var(--space-lg);
+}
+.shop_categories h3{
+  font-size: var(--text-h3-sh);
+  padding-bottom: var(--space-sm);
+  padding-left: 5px;
+  padding-top: var(--space-md);
+}
+.shop_categories > div{
+  width: 100vw;
+  position: relative;
+}
+.shop_cart_cont{
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+  padding: 0 var(--space-xs);
+}
+.shop_categories > div img{
+  width: 100%;
+}
+.shop_cart_cont  div div{
+  position: relative;
+}
+.shop_cart_cont  div button{
+  width: 100%;
+  padding: var(--btn-md) 0;
+  padding: var(--btn-md);
+  background: gray;
+  font-size: 1.03rem;
+  border: none;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease-in;
+}
+.shop_cart_cont  div button:hover{
+  background: red;
+}

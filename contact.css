@@ -1,0 +1,83 @@
+:root {
+  --text-hero: clamp(2.6rem, 6vw, 4rem);
+  --text-h1: clamp(2.8rem, 4vw, 4rem);
+  --text-h2: clamp(1.8rem, 3vw, 2.4rem);
+  --text-h3: clamp(1.28rem, 2.3vw, 1.5rem);
+  --text-body: 1.15rem;
+  --text-small: 1.1rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --btn-sm: 0em 0.35em;
+  --btn-md: 0.75em 1.5em;
+  --btn-lg: 1em 2em;
+  --green_clr: #25D366;
+  --clr-brown: #6E3C19;
+  --brw-clr: #A7795E;
+}
+ul.links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  background: #C98F62;
+}
+ul.links li{
+  list-style: none;
+}
+ul.links li a{
+  text-decoration: none;
+  font-size: var(--text-body);
+}
+form{
+  width: 90vw;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: var(--space-xl) 0 0 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+form label{
+  font-size: var(--text-body);
+  font-weight: 380;
+}
+form input, form textarea{
+  border: 1.8px solid lightgrey;
+  height: 40px;
+  width: 90%;
+  margin-left: 10px;
+  border-radius: 3px;
+  outline: none;
+  font-size: var(--text-body);
+  padding-left: 8px;
+}
+form textarea{
+  height: 150px;
+}
+.btnDiv{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 600px;
+}
+button{
+  background: #C98F62;
+  color: white;
+  border: none;
+  padding: var(--btn-md);
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.map{
+  width: 95vw;
+  overflow: scroll;
+  margin: var(--space-md) auto;
+  max-width: 600px;
+}
+footer{
+  padding-top: 25px;
+}

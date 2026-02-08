@@ -1,0 +1,111 @@
+@media(min-width: 650px){
+  .hero_text{
+    margin-top: 12rem;
+  }
+  .hero_text h1{
+    font-size: clamp(4rem, 6vw, 7rem);
+  }
+  .cart_text{
+    text-align: center;
+  }
+}
+
+@media (min-width: 1124px) {
+  .hero_text{
+    margin-top: 14rem;
+  }
+  .hero_section img{
+    max-width: 55vw;
+  }
+  .hero_text h1{
+    font-size: clamp(4rem, 7vw, 8.5rem);
+  }
+  .hero_text a{
+    font-size: 2rem;
+  }
+  #home header{
+    padding: 1.8rem 1rem;
+  }
+  .phone_nav{
+    display: none;
+  }
+  .desktop_links{
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+  .desktop_links li{
+    list-style-type: none;
+  }
+  .desktop_links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  #home header h3{
+    font-size: 2.5rem;
+  }
+  .offers{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 95vw;
+  }
+  .offers h3{
+    font-size: 1.8rem;
+  }
+  .offers p{
+    font-size: 1.5rem;
+  }
+  .offer{
+    padding: 1.8rem 0.8rem;
+  }
+  .about_us .container{
+    max-width: 900px;
+  }
+  .children, .women, .men{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem 10rem 1rem;
+    gap: 1rem;
+  }
+  .cart_img{
+    left: 0;
+    transform: translateX(0);
+    max-width: 40vw;
+    max-height: 750px;
+  }
+  .first img, .second img{
+    width: 280px;
+  }
+  .cart_text{
+    display: none;
+  }
+  .cart{
+    display: block;
+    width: 87vw;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding-top: 5rem;
+  }
+  .sub_p{
+    font-size: 1.8rem;
+    padding: 3rem 0;
+  }
+  .container h4{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .started p.increase, .why_us p.increase, .driven_by p.increase{
+    height: 80px;
+ }
+ footer{
+   gap: 2rem;
+ }
+ footer p{
+   font-size: 1.6rem;
+ }
+ footer a{
+   font-size: 1.4rem;
+ }
+}

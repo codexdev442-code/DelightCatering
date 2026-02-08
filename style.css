@@ -1,0 +1,339 @@
+:root {
+  --text-hero: clamp(2.6rem, 6vw, 4rem);
+  --text-h1: clamp(2.8rem, 4vw, 4rem);
+  --text-h2: clamp(1.8rem, 3vw, 2.4rem);
+  --text-h3: clamp(1.28rem, 2.3vw, 1.5rem);
+  --text-body: 1.15rem;
+  --text-small: 1.1rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --btn-sm: 0em 0.35em;
+  --btn-md: 0.75em 1.5em;
+  --btn-lg: 1em 2em;
+  --green_clr: #25D366;
+  --clr-brown: #6E3C19;
+  --brw-clr: #A7795E;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+/* header styling */
+.desktop_links{
+  display: none;
+}
+.phone_links{
+  position: fixed;
+  top: 62px;
+  width: 100vw;
+  background: #C98F62;
+  border-top: 1px solid white;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  transition: all 0.5s ease-in;
+}
+.toggle{
+  display: flex;
+}
+.phone_links li{
+  list-style-type: none;
+}
+.phone_links li a{
+  text-decoration: none;
+  color: white;
+  font-size: var(--text-small);
+}
+.menu_box{
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.38rem;
+  transition: all 0.3s ease-in;
+}
+.menu_gap{
+  gap: 0.6rem;
+  transition: all 0.3s ease-in;
+}
+.menu_box div{
+  background: white;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+}
+#home{
+  background: linear-gradient(60deg  , var(--clr-brown), var(--brw-clr));
+  position: relative;
+}
+#home:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 100;
+}
+#home header{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.4rem;
+  position: relative;
+  z-index: 1000;
+  background: #C98F62;
+  position: fixed;
+  top: 0;
+}
+#home header h2{
+  color: white;
+  font-size: var(--text-h3);
+}
+.hero_section{
+  padding-top: var(--space-lg);
+  text-align: center;
+  position: relative;
+}
+.hero_text{
+  margin-top: 2.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95vw;
+  color: white;
+  z-index: 500;
+  padding: var(--space-xl) 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  opacity: 0;
+  animation: show 0.5s ease-in forwards;
+}
+.hero_text h1{
+  font-size: var(--text-hero);
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+@keyframes show{
+  to{
+    padding-top: var(--space-lg);
+    opacity: 1;
+  }
+}
+.hero_text a{
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(-60deg  , var(--clr-brown), var(--brw-clr));;
+  padding: var(--btn-md);
+  border-radius: 0.3rem;
+}
+.hero_section img{
+  height: auto;
+  width: 90vw;
+  max-width: 600px;
+  margin-top: 8rem;
+  padding-bottom: var(--space-md);
+}
+/* what we offer styling */
+.offers{
+  display: grid;
+  gap: var(--space-md);
+  width: 95vw;
+  max-width: 700px;
+  margin:  auto;
+  margin-top: 50px;
+}
+.offer{
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  background: #F7F7F7;
+}
+.offer div{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.offer p{
+  margin-left: 5rem;
+  margin-top: -12px;
+}
+.offer div img{
+  width: 4rem;
+  height: auto;
+}
+.flower{
+  overflow: hidden;
+}
+.flower img{
+  transition: all 0.5s ease-in;
+}
+.flower img:hover{
+  scale: 1.1;
+}
+.delivery{
+  overflow: hidden;
+}
+.delivery img{
+  transition: all 2s ease-in;
+}
+.delivery img:active{
+  transition: all 2s ease-in;
+  transform: translateX(180px);
+}
+/* About styling */
+.sub_h2{
+  text-align: center;
+  font-size: var(--text-h2);
+  margin-top: var(--space-lg);
+}
+.sub_p{
+  text-align: center;
+  font-size: var(--text-small);
+  width: 95vw;
+  margin: 0 auto;
+  padding: var(--space-sm) 0;
+}
+.about_us .container{
+  border: 1.5px solid gray;
+  width: 95vw;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.show{
+  width: 28px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: var(--space-xs);
+}
+.minus{
+  width: 100%;
+  height: 4px;
+  background: black;
+  border-radius: 5px;
+}
+.plus{
+  width: 3.5px;
+  height: 100%;
+  background: black;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+.about_us span{
+  display: flex;
+  align-items: center;
+}
+.started p, .why_us p, .driven_by p{
+  height: 0px;
+  margin-left: 38px;
+  margin-top: 0;
+  padding-top: 10px;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+}
+.started p.increase, .why_us p.increase, .driven_by p.increase{
+  height: 120px;
+}
+
+.plus{
+  display: block;
+}
+/* Featured product styling*/
+.cart_img{
+  width: 95vw;
+  max-width: 500px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cart_text{
+  width: 95vw;
+  margin: 0 auto;
+  padding-top: var(--space-md);
+  font-size: 1.3rem;
+}
+.cart{
+  display: none;
+}
+.categories{
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  width: 95vw;
+  overflow-x: scroll;
+  margin: 0 auto;
+  padding: 3.5rem 0;
+  max-width: 800px;
+}
+.first, .second{
+  position: relative;
+  display: flex;
+  gap: var(--space-lg);
+}
+.first > div, .second > div{
+  position: relative;
+}
+.first > div h4, .second > div h4 {
+  font-size: var(--text-body);
+}
+.addbtn{
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  border: 2px solid white;
+  border-radius: 100%;
+  background: #D1D1D1;
+  padding: var(--btn-sm);
+  font-size: clamp(2rem, 3.4vw, 2.6rem);
+}
+.first img, .second img{
+  width: 13em;
+  height: auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+footer{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding-bottom: 1rem;
+}
+footer ul{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 80vw;
+  margin: 0 auto;
+}
+footer ul li{
+  list-style-type: none;
+}
+footer ul li a{
+  color: gray;
+  text-decoration: none;
+}
+footer p{
+  font-size: var(--text-small);
+}
